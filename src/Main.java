@@ -35,7 +35,7 @@ public class Main {
                     sumaAcumulada += doubleArray[i];
                     sumaPrefija[i] = sumaAcumulada;
                 }
-                
+
                 //formatear y guardar la suma prefija en el archivo CSV
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaSalida))) {
                     DecimalFormat df = new DecimalFormat("#.##");
